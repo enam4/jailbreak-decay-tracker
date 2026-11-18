@@ -1,0 +1,7 @@
+models/
+.venv/
+__pycache__/
+*.pyc
+*.safetensors
+*.gguf
+results/*.jsonl
