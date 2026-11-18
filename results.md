@@ -69,13 +69,13 @@ Ceiling (no "never reveal" line): 10, 10, 11, 12 and 12 of 16. Pooled, that's 55
   - results/<date>.jsonl: raw replies, local only.
   - results/<date>-summary.json.
   - New rows appended to results/history.csv, which is keyed by date + battery hash (2ad086400264 for v1).
-- To get the matrix image: `python render.py <date>`.
+- To rebuild the charts: `python make_figures.py <date>`.
 - To get the terminal view: `python show.py <date>`.
 - If you change the battery, the hash changes, so runs from different batteries are never compared silently.
 - To track decay across model versions, add the new model to lib/hfgen.py HF and rerun.
 
 ## Files
-- **Scripts:** battery.py, tracker.py, run.sh, render.py, show.py, and lib/hfgen.py.
+- **Scripts:** battery.py, tracker.py, run.sh, make_figures.py, figstyle.py, show.py, and lib/hfgen.py.
 - **Data:** scoreboard.json (summary + guard test + notes), results/, logs/.
-- **Images:** img1-matrix-grid.png, term1-matrix.png (rendered from real show.py output).
+- **Images:** assets/banner.png, assets/leak-matrix.png, assets/pooled-by-family.png, assets/show.png (the real show.py output, rendered by make_figures.py).
 - **Post draft:** post-draft.txt.
